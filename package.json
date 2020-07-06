@@ -1,0 +1,14 @@
+{
+  "name": "quickstart-magic.link",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@magic-sdk/admin": "^1.2.2"
+  }
+}
