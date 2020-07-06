@@ -1,4 +1,7 @@
 # quickstart-magic.link
+
+![Magic.link](https://magic.link/static/media/logo.8caf6025.svg)
+
 A quickstart for magic.link, serverless and passwordless login
 
 Contains the frontend login logic and a backend token verification (for Vercel)
