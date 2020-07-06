@@ -1,6 +1,6 @@
 # quickstart-magic.link
 
-![Magic.link](https://magic.link/static/media/logo.8caf6025.svg)
+![Magic.link](magic.link.svg)
 
 A quickstart for magic.link, serverless and passwordless login
 
