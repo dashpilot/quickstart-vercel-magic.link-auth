@@ -11,7 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/magic-sdk/dist/magic.js"></script>
 
     <script>
-        const magic = new Magic("pk_test_E90FA292AE61C345");
+        const key = "YOUR_PUBLISHABLE_KEY";
+        const magic = new Magic(key);
 
         const render = async() => {
             const isLoggedIn = await magic.user.isLoggedIn();
