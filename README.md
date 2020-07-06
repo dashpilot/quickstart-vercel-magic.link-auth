@@ -1,5 +1,5 @@
 # quickstart-magic.link
-A quickstart for magic.link
+A quickstart for magic.link, serverless and passwordless login
 
 Contains the frontend login logic and a backend token verification (for Vercel)
 
