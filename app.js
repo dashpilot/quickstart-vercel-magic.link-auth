@@ -4,12 +4,14 @@ const magic = new Magic(key);
 const render = async() => {
     const isLoggedIn = await magic.user.isLoggedIn();
     /* Show login form if user is not logged in */
-    let html = `
-                <h1>Please sign up or login</h1>
+    let html = `<div class="card"><div class="card-body">
+                <h5 class="card-title">Please sign up or login</h5>
+                <p class="card-text">No password needed</p>
                 <form onsubmit="handleLogin(event)">
-                <input type="email" name="email" required="required" placeholder="Enter your email" />
-                <button type="submit">Send</button>
+                <input type="email" name="email" required="required" placeholder="Enter your email" class="form-control mb-2" />
+                <button type="submit" class="btn btn-primary w-100">Send</button>
                 </form>
+                </div></div>
             `;
     if (isLoggedIn) {
         /* Get user metadata including email */
@@ -17,10 +19,12 @@ const render = async() => {
 
         console.log(userMetadata);
 
-        html = `
-                <h1>Current user: ${userMetadata.email}</h1>
-                <button onclick="handleLogout()">Logout</button>
-                <button onclick="verify()">Verify</button>
+        html = `<div class="card"><div class="card-body">
+                <h5 class="card-title">Current user:</h5>
+                <p class="card-text">${userMetadata.email}</p>
+                <button onclick="handleLogout()" class="btn btn-primary w-100 mb-2">Logout</button>
+                <button onclick="verify()" class="btn btn-secondary w-100">Verify</button>
+                </div></div>
                 `;
     }
     document.getElementById("app").innerHTML = html;

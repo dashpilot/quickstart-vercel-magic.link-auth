@@ -8,7 +8,7 @@ Contains the frontend login logic and a backend token verification (for Vercel)
 
 ## How To
 
-Just replace `key` in app.js with your own Magic.Link publishable key, and create an environment variable called `ML_SECRET` conatining your secret key. Then deploy to Vercel.com for instant passwordless login.
+Just replace `key` in app.js with your own Magic.Link publishable key, and create an environment variable called `ML_SECRET` containing your secret key. Then deploy to Vercel.com for instant passwordless login.
 
 ## Website
 
