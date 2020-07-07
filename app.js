@@ -16,12 +16,11 @@ const render = async() => {
         const userMetadata = await magic.user.getMetadata();
 
         console.log(userMetadata);
-        const token = await magic.user.getIdToken();
 
         html = `
                 <h1>Current user: ${userMetadata.email}</h1>
                 <button onclick="handleLogout()">Logout</button>
-                <button onclick="verify('${token}')">Verify</button>
+                <button onclick="verify()">Verify</button>
                 `;
     }
     document.getElementById("app").innerHTML = html;
@@ -44,7 +43,9 @@ const handleLogout = async() => {
     render();
 };
 
-function verify(token) {
+async function verify() {
+    const token = await magic.user.getIdToken();
+
     var bearer = "Bearer " + token;
     opts = {
         name: "test",
