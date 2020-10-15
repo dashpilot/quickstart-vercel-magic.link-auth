@@ -1,8 +1,8 @@
-# quickstart-magic.link
+# quickstart-vercel-magic.link
 
 ![Magic.link](magic.link.svg)
 
-A quickstart for magic.link, serverless and passwordless login
+Serverless function to use Vercel with magic.link (passwordless authentication)
 
 Contains the frontend login logic and a backend token verification (for Vercel)
 
