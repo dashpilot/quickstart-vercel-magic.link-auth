@@ -1,4 +1,4 @@
-# quickstart-vercel-magic.link
+# quickstart-vercel-magic.link auth
 
 ![Magic.link](magic.link.svg)
 
